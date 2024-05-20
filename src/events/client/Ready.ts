@@ -42,8 +42,7 @@ export default class Ready extends Event {
         let counter = 0;
 
         const rule = new RecurrenceRule();
-        rule.minute = 15;
-        rule.hour = 8;
+        rule.second = 15;
         rule.tz = "America/Los_Angeles";
 
         const job = scheduleJob(rule, async () => {
